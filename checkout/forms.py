@@ -8,7 +8,7 @@ class OrderForm(forms.ModelForm):
         fields = ('full_name', 'email', 'phone_number', 'country', 'postcode', 'town_or_city',
                   'street_address1', 'street_address2', 'county',)
 
-    def __init__(self, *args **kwargs):
+    def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
