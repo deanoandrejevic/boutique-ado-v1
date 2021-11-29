@@ -29,5 +29,8 @@
    },
    "[python]": {
       "editor.defaultFormatter": "ms-python.python"
+   },
+   "[javascript]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
    }
 }
