@@ -6,18 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0002_auto_20211116_1740'),
+        ('products', '0001_initial'),
     ]
 
     operations = [
-        migrations.AlterField(
-            model_name='category',
-            name='id',
-            field=models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'),
+        migrations.AlterModelOptions(
+            name='category',
+            options={'verbose_name_plural': 'Categories'},
         ),
-        migrations.AlterField(
+        migrations.AddField(
             model_name='product',
-            name='id',
-            field=models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'),
+            name='has_sizes',
+            field=models.BooleanField(blank=True, default=False, null=True),
         ),
     ]
